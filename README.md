@@ -1,3 +1,5 @@
+![3637822](https://github.com/QuantAna21/Credit-Card-Churn-Analysis/assets/171746795/3f855eee-fff6-4e2d-b928-e08dafd24664)
+
 # Credit Card Churn Analysis
 
 ### Table of Contents
@@ -43,7 +45,6 @@ Credit card churn, which occurs when customers open accounts primarily to earn w
 
 ![Number of Contacts and Total Transaction Amount by Card Category in the last 12 months](https://github.com/QuantAna21/Credit-Card-Churn-Analysis/assets/171746795/d7748ea9-644b-4020-8e77-a2aaf5de236d)
 
-
 #### *Machine Learning Algorithms*
 -	Applied logistic regression to predict customer attrition, using Synthetic Minority Over-sampling Technique for Nominal and Continuous variables to address class imbalance.
 ```Python
@@ -55,6 +56,8 @@ x_oversample, y_oversample = smotenc.fit_resample(x_train, y_train)
 optimal_k_means(dropcol1, 10)
 kmeans = KMeans(n_clusters = 3, random_state=1)
 ```
+![Elbow Plot 800-426](https://github.com/QuantAna21/Credit-Card-Churn-Analysis/assets/171746795/6a47cc1b-dac2-4b2d-9cf5-a52d834a945c)
+
 ### Key Insights
 #### *Visualizations*
 - Overall customer churn rate is 16%.
