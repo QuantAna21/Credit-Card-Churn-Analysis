@@ -6,6 +6,8 @@
 3. [Dataset Description](#dataset-description)
 4. [Tools Used](#tools-used)
 5. [Data Analysis Approach](#data-analysis-approach)
+6. [Recommendations](#recommendations)
+7. [References](#references)
 
 ### Executive Summary
 Credit card churn, where customers open accounts primarily to earn welcome bonuses, rewards, and benefits, is a significant concern for banks and financial institutions. The objective of this project is to analyze credit card churn patterns, identify factors contributing to customer attrition, and provide actionable insights for developing effective customer retention strategies.
@@ -83,6 +85,8 @@ Based on the insights derived from analyzing the data related to credit card chu
 1. [Kaggle](https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers)
 2. [Stack Overflow](https://stackoverflow.com/)
 3. [Forbes](https://www.forbes.com/advisor/credit-cards/what-is-credit-card-churning/)
+4. [Image by Freepik](www.freepik.com)
+
 
 
 
