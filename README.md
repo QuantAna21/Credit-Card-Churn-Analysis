@@ -46,7 +46,7 @@ Credit card churn, which occurs when customers open accounts primarily to earn w
 ![Number of Contacts and Total Transaction Amount by Card Category in the last 12 months](https://github.com/QuantAna21/Credit-Card-Churn-Analysis/assets/171746795/d7748ea9-644b-4020-8e77-a2aaf5de236d)
 
 #### *Machine Learning Algorithms*
--	Applied logistic regression to predict customer attrition, using Synthetic Minority Over-sampling Technique for Nominal and Continuous variables to address class imbalance.
+-	Applied Logistic Regression to predict customer attrition, using Synthetic Minority Over-sampling Technique for Nominal and Continuous variables to address class imbalance.
 ```Python
 smotenc = SMOTENC([1,2,3,4,5,6,7,8,9,10,11,12,13], random_state = 1)
 x_oversample, y_oversample = smotenc.fit_resample(x_train, y_train)
