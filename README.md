@@ -48,13 +48,24 @@ Credit card churn, which occurs when customers open accounts primarily to earn w
 #### *Machine Learning Algorithms*
 -	Applied Logistic Regression to predict customer attrition, using Synthetic Minority Over-sampling Technique for Nominal and Continuous variables to address class imbalance.
 ```Python
+#utilizing SMOTE-NC to perform oversampling on training data
+pip install -U imbalanced-learn
+from imblearn.over_sampling import SMOTENC
 smotenc = SMOTENC([1,2,3,4,5,6,7,8,9,10,11,12,13], random_state = 1)
 x_oversample, y_oversample = smotenc.fit_resample(x_train, y_train)
 ```
+```Python
+#training the logistic regression model on oversampled training data
+import statsmodels.api as sm
+logmodel = sm.Logit(y_oversample, x_oversample)
+output = logmodel.fit()
+print(output.summary())
+```
 -	K-means Clustering: Segmented customers into distinct groups based on their demographic, financial, and behavioral attributes.
 ```Python
-optimal_k_means(dropcol1, 10)
-kmeans = KMeans(n_clusters = 3, random_state=1)
+#finding the optimal number of clusters and fitting KMeans model with 3 clusters
+optimal_n_clusters(dropcol1, 10)
+kmeans = KMeans(n_clusters=3, random_state=1)
 ```
 ![Elbow Plot 800-426](https://github.com/QuantAna21/Credit-Card-Churn-Analysis/assets/171746795/6a47cc1b-dac2-4b2d-9cf5-a52d834a945c)
 
